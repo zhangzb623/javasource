@@ -1,0 +1,25 @@
+### 阅读源码顺序
+lang>util>io>nio>math>time>net
+lang :
+    基础语法，包装类型 long ... class enum exception 
+    目录：
+        reflect 反射机制 
+        annotation 注解
+util:
+    基本工具，arrayList hashset 集合 
+    concurrent juc  多线程，并发  比如 callable基础语法 executor concurrentMap copyOnWriteArraylist copyOnWriteArraySet blockingQueue
+        atomic 原子类  locks 锁的实现   比如 readWriteLock ReentrantLock
+    function 函数式编程的一些接口
+    stream 流式操作
+io:
+    字节流等 普通io（阻塞式io）
+nio:
+    非阻塞io  buffer  通道类、选择器等
+math:
+    
+time:
+    1.8新增的时间类
+net:
+    网络通信 socket 
+源码推荐优先看集合框架和并发包，无论是从价值还是应对面试都是性价比比较高的
+
